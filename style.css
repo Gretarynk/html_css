@@ -241,17 +241,17 @@ footer {
   footer ul {
     width: 40%;
     list-style-type: none;
+   
     padding: 0;
     display: flex;
     justify-content: space-between;
   }
-  .social{
+  .social li{
     list-style: none;
+    display: inline-block;
     
   }
-  footer li {
-    display: inline;
-  }
+ 
   .contact {
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -283,6 +283,12 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+  .content {
+    padding: 0.5rem;
+    .text{
+      padding: 10px;
+    }
+  }
   .mainMenuWrapper {
    
     display: grid;
@@ -292,6 +298,30 @@ footer {
   .mainArticleWrapper{
     display:grid;
     grid-template-columns: 1fr;
+    gap: 10px;
   }
+ .contentBox img{
+  padding-bottom: 2rem;
+ } 
+ .secondContentWrapper {
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5%;
+}
+.secondContentBox {
+  width: 600px;
+  height: 300px;
+}
 
+.textContainer {
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  
+}
+footer{
+  height: unset;
+}
 }
