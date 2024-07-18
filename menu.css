@@ -39,7 +39,7 @@
 }
 .headerText {
   color: white;
-  width: 50%;
+  width: 90%;
 
   position: relative;
   z-index: 1;
@@ -212,6 +212,13 @@ footer {
   }
   .contact:hover {
     color: lime;
+  }
+}
+@media screen and (max-width: 900px){
+  .mainMenuWrapper {
+   
+    grid-template-columns: 1fr 1fr ;
+    
   }
 }
 @media screen and (max-width: 700px) {

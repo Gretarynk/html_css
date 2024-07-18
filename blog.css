@@ -223,7 +223,7 @@ footer {
     display: flex;
     justify-content: space-between;
   }
-  footer li {
+  .social li {
     display: inline;
   }
   .contact {

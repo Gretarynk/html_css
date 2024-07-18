@@ -186,7 +186,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 500px;}
+    height: 300px;}
 
 footer {
   position: relative;
@@ -281,7 +281,29 @@ footer {
     transform: translate(0);
   }
 }
+@media screen and (max-width: 900px){
 
+  .mainMenuWrapper {
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+  }
+  .mainArticleWrapper{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contentBox {
+    width: 100%;
+  }
+ 
+  .secondContentWrapper{
+    grid-template-columns: 1fr 1fr;
+  }
+  .secondContentBox {
+    width:400px;
+  }
+}
 @media screen and (max-width: 700px) {
   .content {
     padding: 0.5rem;
