@@ -10,8 +10,28 @@
   margin: auto;
   background-image: url(/alex-haney-CAhjZmVk5H4-unsplash.jpg);
 }
-.mainHeader {
+.headerWrapper {
   padding-left: 5rem;
+  padding-right: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logins{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.loginLink{
+  color: rgb(78, 77, 77);
+  text-decoration: none;
+  border-right: 1px solid grey;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+.loginBox{
+  display: none;
 }
 
 .sectionOne {
@@ -57,8 +77,12 @@
     text-align: center;
     padding: 2rem;
   }
+ 
 }
-
+.menuRedirectionLink{
+  color: rgb(192, 192, 191);
+  cursor: pointer;
+}
 .mainMenuWrapper {
   margin: auto;
   display: grid;
