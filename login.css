@@ -11,6 +11,26 @@
 .mainHeader {
   padding-left: 5rem;
 }
+.logins{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.loginLink{
+  color: rgb(78, 77, 77);
+  text-decoration: none;
+  border-right: 1px solid grey;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+.headerWrapper {
+  padding-left: 5rem;
+  padding-right: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .boxMain {
     position: relative;
     width: 100%;
@@ -53,7 +73,70 @@
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: for a nice shadow effect */
 }
+.smallText{
+  font-size: x-small;
+}
+input, button {
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  padding:10px 40px;
+  font-size: larger;
+  font-weight: 300px;
+}
+button:hover{
+  background-color: limegreen;
+  color: white;
+}
+.signWrapper {
+  width: 500px;
+  height: 500px;
+  padding-top: 2rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  gap: 2rem;
+}
+.buttonSign{
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  background-color: rgb(242, 241, 241);
+  padding:10px 40px;
+  font-size: larger;
+  font-weight: 300px;
+  cursor: pointer;
+  
+  
 
+}
+.buttonSign:hover{
+  background-color: limegreen;
+color: white;}
+
+.close{
+  background-color: red;
+  color: white;
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  
+}
+.nick, .email, .password{
+  font-size: smaller;
+  padding: 10px 40px;
+}
 
 footer {
     position: relative;
@@ -130,3 +213,4 @@ footer {
       color: lime;
     }
   }
+  
