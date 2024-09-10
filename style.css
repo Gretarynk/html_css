@@ -303,6 +303,13 @@ footer {
   }
 }
 @media screen and (max-width: 900px) {
+  .headerWrapper {
+    padding-left: 0.5rem;
+    
+  }
+ .navbar-text{
+  display: none;
+ }
   .mainMenuWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -11,9 +11,9 @@
   min-height: 100vh;
   background-image: url(/alex-haney-CAhjZmVk5H4-unsplash.jpg);
 }
-.mainHeader {
+/* .mainHeader {
   padding-left: 5rem;
-}
+} */
 .headerWrapper1 {
   padding-left: 5rem;
   padding-right: 1rem;
@@ -260,6 +260,13 @@ footer {
   }
 }
 @media screen and (max-width: 700px) {
+  .headerWrapper1 {
+    padding-left: 0.5rem;
+    
+  }
+ .navbar-text{
+  display: none;
+ }
   .headerWrapper {
     width: 100%;
     height: 200px;}

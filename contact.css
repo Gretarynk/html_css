@@ -8,9 +8,9 @@
 .body {
   margin: auto;
 }
-.mainHeader {
+/* .mainHeader {
   padding-left: 5rem;
-}
+} */
 .headerWrapper {
   padding-left: 5rem;
   padding-right: 1rem;
@@ -146,6 +146,13 @@ footer {
   }
 }
 @media screen and (max-width: 700px) {
+  .headerWrapper {
+    padding-left: 0.5rem;
+    
+  }
+ .navbar-text{
+  display: none;
+ }
   .formWrapper {
     width: 90%;
     margin-top: 10%;

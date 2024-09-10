@@ -1,16 +1,27 @@
-// Select all elements with the class 'card'
-const cards = document.querySelectorAll('.card');
 
-// Loop through each card and add a click event listener
-cards.forEach(card => {
-  card.addEventListener('click', function() {
-    this.classList.toggle('flipped');
-  });
-});
+const cards = document.querySelectorAll('.card');
 const checkboxes = document.querySelectorAll('.form-check-input');
+const basketCountElement= document.getElementById('basketCount');
+let basketCount=0;
+
+
+
+
+
+function updateBasketCount() {
+  const checkedItems = document.querySelectorAll('.form-check-input:checked');
+  basketCount = checkedItems.length;
+  basketCountElement.textContent = basketCount;
+}
 
 checkboxes.forEach(checkbox => {
   checkbox.addEventListener('click', function(event) {
-    event.stopPropagation();
+    event.stopPropagation(); 
+    updateBasketCount(); 
+  });
+});
+cards.forEach(card => {
+  card.addEventListener('click', function() {
+    this.classList.toggle('flipped');
   });
 });
